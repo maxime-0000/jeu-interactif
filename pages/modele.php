@@ -1,7 +1,7 @@
 <?php 
 
 //Envoie les données faire les requete sql ici
-//debut du jeux
+
 
 $host = "192.168.56.10";
 $dbname = "Vie";

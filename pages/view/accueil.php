@@ -1,9 +1,12 @@
 <title>Jeu de la vie</title>
 <link rel="stylesheet" href ="pages\style.css">
+
+
 <?php
 echo "<body>";
 
 /* ecran d'accueil avant le jeu */
+
 if (!isset($_GET["run"])): ?>
     <div id="accueil">
         <h1 class="debutjeux">Jeu de la vie, règles du jeu.</h1>
@@ -17,9 +20,10 @@ if (!isset($_GET["run"])): ?>
 
     <script>
         document.getElementById("btnStart").addEventListener("click", function () {
-            window.location.href = "?run=1";
+            window.location.href = "?run=0";
         });
     </script>
+    
 <?php
     exit;
 endif;
