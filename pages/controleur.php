@@ -1,12 +1,10 @@
+<?php
+session_start();
+require 'pages/modele.php';
 
-<?php 
-//decide quoi faire
+if (!isset($_GET['run'])) {
+    require 'view/accueil.php';
+    exit;
+}
 
-require 'view\accueil.php';
-
-require 'modele.php';
-
-require 'view\view.php';
-
-test($message)
-?>
+require 'view/view.php';

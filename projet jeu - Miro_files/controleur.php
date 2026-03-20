@@ -1,5 +1,0 @@
-//decide quoi faire
-
-<php 
-
-?>

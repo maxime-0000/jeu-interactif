@@ -1,7 +1,5 @@
-<?php 
-include 'pages\controleur.php';
+<?php
+require 'controleur/ControleurJeu.php';
 
-?>
-
-
-
+$controleur = new ControleurJeu();
+$controleur->gererRequete();

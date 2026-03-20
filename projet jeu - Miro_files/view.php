@@ -1,5 +1,0 @@
-mise en page
-
-<php 
-
-?>
