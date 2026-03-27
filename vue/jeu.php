@@ -21,5 +21,6 @@
             <p>-- Fin de l'aventure --</p>
         <?php endif; ?>
     </nav>
+    <a class="btn-accueil" href="index.php">⬅ Retour à l'accueil</a>
 </body>
 </html>

@@ -20,6 +20,8 @@
         <?php if (empty($choix_page)): ?>
             <p>— Fin de l'aventure —</p>
         <?php endif; ?>
+        
     </nav>
+        <a style="display:inline-block; margin-top:20px; padding:8px 16px; background:#555; color:white; text-decoration:none; border-radius:5px;" href="index.php">⬅ Retour à l'accueil</a>
 </body>
 </html>
