@@ -7,20 +7,32 @@
     <link rel="stylesheet" href="vue/style.css">
 </head>
 <body>
-    <h1><?php echo htmlspecialchars($page['titre']); ?></h1>
-    <p><?php echo htmlspecialchars($page['texte']); ?></p>
+    <div class="game-wrap">
 
-    <nav>
-        <?php foreach ($choix_page as $c): ?>
-            <a class="btn-choix" href="?run=1&id=<?php echo (int)$c['id_page_destination']; ?>">
-                <?php echo htmlspecialchars($c['texte_choix']); ?>
-            </a><br>
-        <?php endforeach; ?>
+        <div class="game-header">
+            <div class="game-logo">Jeu de la vie</div>
+        </div>
 
-        <?php if (empty($choix_page)): ?>
-            <p>-- Fin de l'aventure --</p>
+        <div class="game-card">
+            <span class="age-badge"><?php echo htmlspecialchars($page['titre']); ?></span>
+            <p><?php echo htmlspecialchars($page['texte']); ?></p>
+        </div>
+
+        <?php if (!empty($choix_page)): ?>
+            <div class="choices-title">Que choisis-tu ?</div>
+            <?php foreach ($choix_page as $c): ?>
+                <a class="btn-choix" href="?run=1&id=<?php echo (int)$c['id_page_destination']; ?>">
+                    <?php echo htmlspecialchars($c['texte_choix']); ?> →
+                </a>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <div class="fin">
+                <h1>Fin</h1>
+                <p><?php echo htmlspecialchars($page['texte']); ?></p>
+                <a href="?" class="btn-restart">Recommencer</a>
+            </div>
         <?php endif; ?>
-    </nav>
-    <a class="btn-accueil" href="index.php">⬅ Retour à l'accueil</a>
+<a class="btn-accueil" href="index.php">⬅ Retour à l'accueil</a>
+    </div>
 </body>
 </html>
