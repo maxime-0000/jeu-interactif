@@ -136,3 +136,30 @@ p {
 #btnStart:hover, .btn-restart:hover {
     background: #5db891;
 }
+
+.quit-btn {
+    margin-left: 12px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+    padding: 4px 10px;
+}
+
+.quit-btn:hover { color: #e8c97e; border-color: rgba(232,201,126,0.3); }
+
+.leaderboard-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 0.5px solid rgba(255,255,255,0.07);
+    font-size: 14px;
+}
+
+.leaderboard-row:last-child { border-bottom: none; }
+.rank   { color: #e8c97e; font-weight: 500; min-width: 28px; }
+.pseudo { color: #fff; flex: 1; }
+.score  { color: #7fc8a9; }
+.detail { color: rgba(255,255,255,0.35); font-size: 12px; }
