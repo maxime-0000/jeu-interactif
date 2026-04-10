@@ -53,6 +53,8 @@ body {
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
+    -webkit-box-shadow: 5px 5px 15px 5px #ff0000; 
+box-shadow: 5px 5px 15px 5px #CCFFFF;
 }
 
 .age-badge {

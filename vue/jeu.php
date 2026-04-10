@@ -29,10 +29,12 @@
             <div class="fin">
                 <h1>Fin</h1>
                 <p><?php echo htmlspecialchars($page['texte']); ?></p>
-                <a href="?" class="btn-restart">Recommencer</a>
+                <a href="?logout=1" class="btn-restart">Recommencer</a>
             </div>
         <?php endif; ?>
-<a class="btn-accueil" href="index.php">⬅ Retour à l'accueil</a>
+
+        <a class="btn-accueil" href="?logout=1">⬅ Retour à l'accueil</a>
+
     </div>
 </body>
 </html>

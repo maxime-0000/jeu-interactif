@@ -8,9 +8,9 @@ class ConnexionBDD
         if (self::$instance === null) {
             try {
                 self::$instance = new PDO(
-                    "mysql:host=digne.slam.lab;dbname=digne;charset=utf8",
-                    "digne",
-                    "Xa5ftzRaHGHM"
+                    "mysql:host=192.168.56.10;dbname=Vie;charset=utf8",
+                    "etudiant",
+                    "etudiant"
                 );
                 self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch (PDOException $e) {
